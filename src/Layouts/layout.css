@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'texygre';
+    src: url('../Fonts/texgyreadventor-bold.otf') format('truetype');;
+  }
+
+#navbar-style {
+
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: aqua;
+
+}
+
+.navbar-general {
+
+    font-family: 'texygre', monospace;
+
+    color: black;
+
+}
+
+.navbar-general:hover {
+
+    color: aqua;
+
+}
