@@ -21,6 +21,7 @@ function App() {
               <Route path='/' element={<HomePage/>}/>
               <Route path='/designer' element={<BoardDesignerPage/>}/>
 
+            {/*  some text */}
             </Routes>
         
         </BrowserRouter>
