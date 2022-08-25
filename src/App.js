@@ -1,7 +1,7 @@
-
 import React from 'react';
 import {BrowserRouter,  Routes, Route} from 'react-router-dom'
 import HomePage from './Pages/HomePage'
+import LoginPage from './Pages/LoginPage';
 import BoardDesignerPage from './Pages/BoardDesignerPage'
 
 import './App.css';
@@ -20,6 +20,7 @@ function App() {
               <Route path='/home' element={<HomePage/>}/>
               <Route path='/' element={<HomePage/>}/>
               <Route path='/designer' element={<BoardDesignerPage/>}/>
+              <Route path='/login' element={<LoginPage/>}/>
 
             {/*  some text */}
             </Routes>
