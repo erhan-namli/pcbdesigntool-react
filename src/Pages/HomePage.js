@@ -14,16 +14,19 @@ const HomePage = () => {
     <React.Fragment>
 
         <Header></Header>
-
+            {/* Main center */}
             <div className="main-frame">
-
 
                     <div className="container ">
 
+                         {/* Bootstrap Grid Layout */}
+                         {/* Main row */}
                         <div className="row">
 
+                            {/* Left Section */}
                             <div className="col text-center m-4">
 
+                                {/* Logo SVG */}
                                 <div className="row">
                                     <h2> PCB Prototyping Tool </h2>
                                     <hr></hr>
@@ -31,6 +34,7 @@ const HomePage = () => {
                                     <hr></hr>
                                 </div>
 
+                                 {/* Learn More Button */}
                                 <div className="row">
 
                                     <div className="col text-center p-5">
@@ -38,21 +42,25 @@ const HomePage = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
+                            {/* Right Section */}
                             <div className="col m-4">
 
+                                {/* Slogan */}
                                 <div className="row text-center">
 
                                     <h2> The Easiest Way to Design Electronics </h2>
 
                                 </div>
 
+                                {/* Description */}
                                 <div className="row text-center">
 
                                     <p>Artificial intelligence-based PCB manufacturing service assists the user in the process of printing and preparing for sale</p>
 
                                 </div>
 
+                                 {/* Vector Image */}
                                 <div className="row text-center">
 
                                     <img style={{width:'100%'}} src={ElectronicConcept}></img>
