@@ -23,6 +23,10 @@ function App() {
               <Route path='/login' element={<LoginPage/>}/>
 
             {/*  some text */}
+            {/*  some text */}
+            {/*  some text */}
+            {/*  some text */}
+            {/*  some text */}
             </Routes>
         
         </BrowserRouter>
