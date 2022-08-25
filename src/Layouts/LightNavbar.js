@@ -20,6 +20,7 @@ const LightNavbar = () => {
                 <Nav.Link href="designer">BOARD DESIGNER</Nav.Link>
                 <Nav.Link href="#link">MARKETPLACE</Nav.Link>
                 <Nav.Link href="#link">PORTFOLIO</Nav.Link>
+                <Nav.Link href="login">LOGIN&REGISTER</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
