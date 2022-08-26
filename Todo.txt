@@ -26,6 +26,5 @@
     }, []
     )
 
-
 Client ID -> 244496027610-c34d9scktqtfh114hgbh2hsis13dlg52.apps.googleusercontent.com
 Client Secret -> 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

@@ -9,12 +9,14 @@ import {useEffect} from "react";
 const LoginPage = () => {
 
     function handleCallbackResponse(response) {
-        console.log("BU " + response.crediental)
+        console.log('the token' + response.credential);
 
-    var userObject = jwt_decode(response.crediental)
-
-    console.log(userObject)
+        var userObject = jwt_decode(response.credential)
+        console.log(userObject);
+    
     }
+
+    
 
     useEffect(() => {
         /* global google */
@@ -27,6 +29,8 @@ const LoginPage = () => {
             document.getElementById("signInDiv"),
             {theme : "outline", size:"large"}
         );
+
+        google.accounts.id.prompt();
     }, []);
 
     return (
