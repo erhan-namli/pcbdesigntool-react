@@ -9,12 +9,23 @@
   font-family: sans-serif;
   /* background: linear-gradient(#141e30, #243b55);
 } */
+
+:root{
+  --main-bg-color-dark: #293c43;
+  --main-bg-color-light:#749592;
+  --panel-bg-color: #749592;
+  --widget-bg-color: #525162;
+  --widget-over-color: #353542;
+  --input-bg-color: #446668;
+  --main-color: rgb(89, 228, 167);
+}
+
 .App {
   height: 81.7vh;
 
   /* justify-content: center; */
   /* width: 100%; */
-  background-color: rgb(89, 228, 167);
+  background-color: rgb(255, 255, 255);
 }
 .login-box {
   position: absolute;
@@ -23,7 +34,7 @@
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,.5);
+  background: var(--main-color);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
@@ -66,7 +77,7 @@
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: #fff;
   font-size: 12px;
 }
 
@@ -74,7 +85,7 @@
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #fff;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -85,13 +96,13 @@
 }
 
 .login-box a:hover {
-  background: #03e9f4;
-  color: #fff;
+  background: #fff;
+  color: var(--main-color);
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #fff,
+              0 0 25px #fff,
+              0 0 50px #fff,
+              0 0 100px #fff;
 }
 
 .login-box a span {
