@@ -1,0 +1,31 @@
+// TO DO List
+
+# Google Side 
+
+- Google cloud platform -> credientals -> create project 
+- Oath consent screen -> External 
+- Edit app registration -> test users
+- Credietals -> Oath client id -> Application type
+- Authorized Javascript origins -> localhost & localhost:3000
+- Authorized redirect origins -> localhost & localhost:3000
+- Oauth client created -> client secret & client id !! Save IT 
+
+# React Side
+
+- public folder -> index.html 
+
+        '
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        '
+        copy the script between the head tags 
+
+- src folder -> App.js
+
+    useEffect(() => {
+
+    }, []
+    )
+
+
+Client ID -> 244496027610-c34d9scktqtfh114hgbh2hsis13dlg52.apps.googleusercontent.com
+Client Secret -> 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
