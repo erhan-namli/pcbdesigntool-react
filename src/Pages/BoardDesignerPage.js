@@ -1,17 +1,17 @@
 import React from 'react'
 
-import Header from '../Layouts/LightNavbar'
-import Footer from '../Layouts/Footer'
+// import Header from '../Layouts/LightNavbar'
+// import Footer from '../Layouts/Footer'
 import Sidebar from '../Layouts/Sidebar'
 
-import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg'
+// import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg'
 
 const BoardDesigner = () => {
   return (
 
     <React.Fragment>
 
-        <Header></Header>
+        {/* <Header></Header> */}
 
         {/* Advance Settings */}
         <Sidebar></Sidebar>

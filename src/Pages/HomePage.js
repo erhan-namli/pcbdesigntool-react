@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import Header from '../Layouts/LightNavbar'
-import Footer from '../Layouts/Footer'
+// import Header from '../Layouts/LightNavbar'
+// import Footer from '../Layouts/Footer'
 
-import './HomePage.css'
+import './HomePage.css';
 
-import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg'
+import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg';
 
 
 const HomePage = () => {
@@ -13,7 +13,7 @@ const HomePage = () => {
   
     <React.Fragment>
 
-        <Header></Header>
+        {/* <Header></Header> */}
             {/* Main center */}
             <div className="main-frame">
 
@@ -63,7 +63,7 @@ const HomePage = () => {
                                  {/* Vector Image */}
                                 <div className="row text-center">
 
-                                    <img style={{width:'100%'}} src={ElectronicConcept}></img>
+                                    <img style={{width:'100%'}} alt='electronic' src={ElectronicConcept}></img>
 
                                 </div>
 
@@ -72,15 +72,15 @@ const HomePage = () => {
                         </div>
 
                     </div>
-          
+            
             </div>
 
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
 
     </React.Fragment>
 
 
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
