@@ -5,29 +5,82 @@ import { Link } from "react-router-dom";
 import jwt_decode from 'jwt-decode';
 
 import {useEffect} from "react";
+import { useState } from 'react';
+
+import GoogleLogin from '@leecheuk/react-google-login';
 
 const LoginPage = () => {
 
-    function handleCallbackResponse(response) {
-        console.log("BU " + response.crediental)
+    console.log(process.env.NODE_ENV)
 
-    var userObject = jwt_decode(response.crediental)
+    console.log(process.env.REACT_APP_CLIENT_ID)
 
-    console.log(userObject)
+    const data = localStorage.getItem('loginData')
+    const [loginData, setLoginData] = useState(
+      data ? JSON.parse(data) : null
+    );
+  
+    const handleSuccess = async (googleData) => {
+      console.log(googleData);
+      const res = await fetch('/api/google-auth', {
+        method: 'POST',
+        body: JSON.stringify({
+          token: googleData.tokenId,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+  
+      const data = await res.json();
+      setLoginData(data);
+      localStorage.setItem('loginData', JSON.stringify(data));
     }
 
-    useEffect(() => {
-        /* global google */
-        google.accounts.id.initialize({
-            client_id: "244496027610-c34d9scktqtfh114hgbh2hsis13dlg52.apps.googleusercontent.com",
-            callback : handleCallbackResponse
-        });
+    const handleFailure = (res ) => {
+        alert(JSON.stringify(res));
+      }
 
-        google.accounts.id.renderButton(
-            document.getElementById("signInDiv"),
-            {theme : "outline", size:"large"}
-        );
-    }, []);
+
+    // function testGetFunction(e) {
+    //     e.preventDefault();
+
+    //     fetch("http://localhost:1337/test").then(response => response.json()).then(data => console.log(data))
+
+    // }
+
+
+
+    // ------------------------
+
+    // function handleCallbackResponse(response) {
+    //     console.log("BU " + response.credential)
+
+    // var userObject = jwt_decode(response.credential)
+
+    // console.log(userObject)
+
+    // }
+
+    // useEffect(() => {
+    //     /* global google */
+    //     google.accounts.id.initialize({
+    //         client_id: "244496027610-c34d9scktqtfh114hgbh2hsis13dlg52.apps.googleusercontent.com",
+    //         callback : handleCallbackResponse
+    //     });
+
+    //     google.accounts.id.renderButton(
+    //         document.getElementById("signInDiv"),
+    //         {theme : "outline", size:"large"}
+    //     );
+    // }, []);
+
+    // function getRequestTest(e) {
+    //     e.preventDefault();
+
+    //     fetch("http://localhost:1337/").then(response => response.json()).then(data => console.log(data))
+
+    // }
 
     return (
         <>
@@ -52,7 +105,17 @@ const LoginPage = () => {
                             <Link to='/' id="">
                                 Submit</Link>
 
-                                <div id="signInDiv">  </div>
+                                <GoogleLogin
+                                    clientId="244496027610-c34d9scktqtfh114hgbh2hsis13dlg52.apps.googleusercontent.com"
+                                    buttonText='Sign in with Google'
+                                    onSuccess={handleSuccess}
+                                    onFailure={handleFailure}
+                                    cookiePolicy='single_host_origin'
+                                />
+
+{/* <div id="signInDiv">  </div> */}
+
+                            <button  ></button>
                             
                         </div>
                     </form>

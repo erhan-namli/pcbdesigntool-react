@@ -1,0 +1,8 @@
+{
+    "id" : 1,
+    "name" : "atmega328P",
+    "operating-voltage" : "5V",
+    "RAM" : "2Kb",
+    "programmable-io-lines" : 23
+
+  };

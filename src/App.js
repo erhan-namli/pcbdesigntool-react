@@ -10,9 +10,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
-
-
 function App() {
+
   return (
     <React.Fragment className="App"> 
 
@@ -25,8 +24,6 @@ function App() {
               <Route path='/' element={<HomePage/>}/>
               <Route path='/designer' element={<BoardDesignerPage/>}/>
               <Route path='/login' element={<LoginPage/>}/>
-
-            {/*  some text */}
             
             </Routes>
 

@@ -6,9 +6,11 @@ import React from 'react';
 import './HomePage.css';
 
 import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg';
+import userEvent from '@testing-library/user-event';
 
 
 const HomePage = () => {
+
   return (
   
     <React.Fragment>
@@ -28,7 +30,7 @@ const HomePage = () => {
 
                                 {/* Logo SVG */}
                                 <div className="row">
-                                    <h2> PCB Prototyping Tool </h2>
+                                    <h2> ERHAN ERHAN  Prototyping Tool </h2>
                                     <hr></hr>
                                     <h3> LOGO </h3>
                                     <hr></hr>
