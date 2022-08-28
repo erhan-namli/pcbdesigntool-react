@@ -3,17 +3,19 @@ import {BrowserRouter,  Routes, Route} from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import LoginPage from './Pages/LoginPage';
 import BoardDesignerPage from './Pages/BoardDesignerPage'
+import LightNavbar from './Layouts/LightNavbar';
+import Footer from './Layouts/Footer';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
-
 
 function App() {
   return (
     <React.Fragment className="App"> 
 
         <BrowserRouter>
+          <LightNavbar />
 
             <Routes>
 
@@ -23,8 +25,10 @@ function App() {
               <Route path='/login' element={<LoginPage/>}/>
 
             {/*  some text */}
+            
             </Routes>
-        
+
+          {/* <Footer /> */}
         </BrowserRouter>
 
     </React.Fragment>

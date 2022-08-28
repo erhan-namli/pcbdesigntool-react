@@ -1,0 +1,14 @@
+
+- Çalışma klasörünün içerisinde 2 tane terminal açılır
+
+        "npm install"
+
+- 1 client side değişiklikleri direkt görmek için bu terminal kullanılır ve çalıştırmak için
+        "npm run start"
+
+- 2 full stack uygulamayı çalıştırmak için ise bu terminal kullanılır ve production versiyonu olarak adlandırılabilir
+        "cd server"
+        "nodemon index.js"
+
+- 3 bu terminal full stack uygulamada  client side değişikleri görmek için build alır ve şu komut kullanılır
+        "npm run build"

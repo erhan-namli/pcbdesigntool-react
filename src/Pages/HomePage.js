@@ -1,19 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-import Header from '../Layouts/LightNavbar'
-import Footer from '../Layouts/Footer'
+// import Header from '../Layouts/LightNavbar'
+// import Footer from '../Layouts/Footer'
 
-import './HomePage.css'
+import './HomePage.css';
 
-import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg'
+import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg';
+import { Link } from "react-router-dom";
 
+import "./LoginPage.css"
 
 const HomePage = () => {
+
+const loginData = localStorage.getItem('loginData')
+
+
   return (
   
     <React.Fragment>
 
-        <Header></Header>
+        {
+            loginData ? (<div>  {/* <Header></Header> */}
             {/* Main center */}
             <div className="main-frame">
 
@@ -63,7 +70,7 @@ const HomePage = () => {
                                  {/* Vector Image */}
                                 <div className="row text-center">
 
-                                    <img style={{width:'100%'}} src={ElectronicConcept}></img>
+                                    <img style={{width:'100%'}} alt='electronic' src={ElectronicConcept}></img>
 
                                 </div>
 
@@ -72,15 +79,52 @@ const HomePage = () => {
                         </div>
 
                     </div>
-          
+            
             </div>
 
-        <Footer></Footer>
+        {/* <Footer></Footer> */}</div>) : (
+        <div>
+            
+                <div className='login-box'>
+
+                            <div className='text-center'>
+
+                            <h1>WARNING</h1> 
+
+                            </div>
+
+                            <div className='text-center'>
+                                
+                                    <div className="row">
+                                    <p> Please login to see this page </p>
+
+                                    </div>
+                                    <div className='row'>
+
+                                        <Link to='/login' className="text-center color" id="">
+
+                                        Take me
+                                            
+                                        </Link>
+
+                                    </div>
+                                
+                                    {/* <button className='btn' > Yönlendir </button> */}
+  
+                            </div>
+
+                        </div>
+
+                </div>
+             )
+        }
+
+       
 
     </React.Fragment>
 
 
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
