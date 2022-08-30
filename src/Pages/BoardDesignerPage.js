@@ -6,6 +6,7 @@ import Sidebar from '../Layouts/Sidebar'
 
 import { Link } from "react-router-dom";
 import MicroblockList from '../Components/MicroblockList';
+import DnD from '../Components/DnD';
 
 // import ElectronicConcept from '../Assets/ElectronicConcept/concept.jpg'
 
@@ -54,8 +55,12 @@ const BoardDesigner = () => {
             <div className="row">
 
                 
-                <MicroblockList></MicroblockList>
+                {/* <MicroblockList></MicroblockList> */}
+                <div style={{overflow: 'auto', maxHeight: 400}}>
+                <DnD></DnD>
+                </div>
 
+                <iframe src="https://clara.io/embed/2db94aff-44d1-406c-9f85-3085db2c3f19?renderer=webgl" width="800" height="600" allowfullscreen></iframe>
             </div>
 
         </div>

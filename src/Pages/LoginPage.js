@@ -36,7 +36,7 @@ const LoginPage = () => {
     };
 
     const handleFailure = (res) => {
-        alert(JSON.stringify(res));
+        console.log(JSON.stringify(res));
       }
     
       const handleLogout = () => {
