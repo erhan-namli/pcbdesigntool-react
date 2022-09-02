@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter,  Routes, Route} from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import LoginPage from './Pages/LoginPage';
+import TestPage from './Pages/TestPage';
 import BoardDesignerPage from './Pages/BoardDesignerPage'
 import LightNavbar from './Layouts/LightNavbar';
 import Footer from './Layouts/Footer';
@@ -23,6 +24,7 @@ function App() {
               <Route path='/' element={<HomePage/>}/>
               <Route path='/designer' element={<BoardDesignerPage/>}/>
               <Route path='/login' element={<LoginPage/>}/>
+              <Route path='/test' element={<TestPage/>}/>
 
             {/*  some text */}
             
