@@ -5,7 +5,7 @@ import LoginPage from './Pages/LoginPage';
 import TestPage from './Pages/TestPage';
 import BoardDesignerPage from './Pages/BoardDesignerPage'
 import LightNavbar from './Layouts/LightNavbar';
-import Footer from './Layouts/Footer';
+// import Footer from './Layouts/Footer';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -13,7 +13,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 function App() {
   return (
-    <React.Fragment className="App"> 
+    <React.Fragment> 
 
         <BrowserRouter>
           <LightNavbar />

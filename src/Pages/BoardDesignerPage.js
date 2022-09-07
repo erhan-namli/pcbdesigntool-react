@@ -5,7 +5,7 @@ import React from 'react'
 import Sidebar from '../Layouts/Sidebar'
 
 import { Link } from "react-router-dom";
-import MicroblockList from '../Components/MicroblockList';
+// import MicroblockList from '../Components/MicroblockList';
 import DnD from '../Components/DnD';
 
 
@@ -63,7 +63,7 @@ const BoardDesigner = () => {
                 <DnD></DnD>
                 </div>
 
-                <iframe src="https://clara.io/embed/2db94aff-44d1-406c-9f85-3085db2c3f19?renderer=webgl" width="800" height="600" allowfullscreen></iframe>
+                <iframe src="https://clara.io/embed/2db94aff-44d1-406c-9f85-3085db2c3f19?renderer=webgl" width="800" height="600" allowfullscreen title='something'></iframe>
             </div>
 
         </div>
