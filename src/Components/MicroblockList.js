@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactList from 'react-list';
-import List from 'react'
+
 
 const MicroblockList = () => {
     var state = {

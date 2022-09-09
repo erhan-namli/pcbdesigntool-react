@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './LoginPage.css';
 import { Link } from "react-router-dom";
-import { Image, Button, Card } from 'react-bootstrap';
-import jwt_decode from 'jwt-decode';
+import { Button, Card } from 'react-bootstrap';
+// import jwt_decode from 'jwt-decode';
 import GoogleLogin from 'react-google-login';
-import { gapi } from 'gapi-script';
-import {useEffect} from "react";
+/* import { gapi } from 'gapi-script';
+import {useEffect} from "react"; */
 
 const LoginPage = () => {
 
